@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://tse3.mm.bing.net/th?id=OIP.By3nUmOuhNzgtS1lREXYdQHaHa&pid=Api&P=0&h=180.icon">
+  <title>Hi Panda</title>
+  <style>
+    img {
+      display: none; 
+      max-width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+<p><h1>Choose the option very carefully</h1></p>
+<button onclick="displayImage('Hi')">Hi</button>
+<button onclick="displayImage('Bye')">Bye</button>
+
+
+<img id="image1" src="https://media.tenor.com/g4YAy4i1hGkAAAAi/love-happy.gif" alt="Happy">
+
+
+<img id="image2" src="https://media.tenor.com/TVPYqh_E1JYAAAAi/peach-goma-peach-and-goma.gif" alt="Slap">
+
+<script>
+  function displayImage(choice) {
+   
+    document.getElementById('image1').style.display = 'none';
+    document.getElementById('image2').style.display = 'none';
+
+    
+    if (choice === 'Hi') {
+      document.getElementById('image1').style.display = 'block';
+    } else if (choice === 'Bye') {
+      document.getElementById('image2').style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
+
